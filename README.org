@@ -1,3 +1,5 @@
-nasm -fbin boot_sect_hello.asm -o boot_sect_hello.bin
+** melpOS
+   
+   simple os from scratch;
 
-qemu-system-x86_64 --nographic --curses boot_sect_simple.bin
+

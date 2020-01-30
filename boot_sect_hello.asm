@@ -1,6 +1,6 @@
 mov ah, 0x0e
 mov al, 'H'
-int 0x10
+int 0x10                        ;产生中断, 将字符 H 显示在终端
 mov al, 'e'
 int 0x10
 mov al, 'l'
