@@ -1,3 +1,4 @@
    nasm -fbin boot_sect_hello.asm -o boot_sect_hello.bin
 
    qemu-system-x86_64 --nographic --curses boot_sect_simple.bin
+   qemu-system-x86_64 --nographic boot_sect_mem.bin
