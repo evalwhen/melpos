@@ -1,20 +1,20 @@
 print_hex:
   pusha
-  mov cx, 0
+  mov cx, 0                     ;计数器，四个十六进制数字
 
 hex_loop:
   cmp cx, 4
   je end_print_hex
 
-  mov ax, dx
-  and ax, 0x000f
+  mov ax, dx                    ;ax, 作为临时变量
+  and ax, 0x000f                ;取得 ax 最后四位
   add al, '0'
   cmp al, '9'
   jle le_nine
-  add al, 7
+  add al, 7                     ;参照 ascii 表
 
 le_nine:
-  mov bx, HEX_TEMPLATE + 5
+  mov bx, HEX_TEMPLATE + 5      ;模板最后一个数字地址
   sub bx, cx
   mov [bx], al
 
