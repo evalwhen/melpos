@@ -1,5 +1,3 @@
 ** melpOS
    
    simple os from scratch;
-
-
